@@ -1,26 +1,15 @@
-# Debugme - Fun Code Grader 🎯
+# DebugMe - Fun Code Grader
 
-**Debugme** is a fun and interactive web app that helps users learn debugging techniques in JavaScript. It provides instant feedback on their code and encourages better coding habits.
+DebugMe is an interactive coding challenge that helps beginners learn debugging using **console.log()**.
 
 ## 🚀 Features
-- ✅ Grade your code based on debugging best practices
-- ✅ Save your code for future reference
-- ✅ Fun messages to make debugging enjoyable
-- ✅ Leaderboard to track top debuggers
+- Users enter code and get real-time feedback.
+- If correct, users can **add their name** to the leaderboard.
+- Leaderboard updates dynamically.
 
-## 📌 How to Use
-1. Enter your JavaScript code in the text area.
-2. Click "Grade my code" to receive feedback.
-3. Click "Save my code" to store your progress.
-4. Check the **Leaderboard** to see where you rank!
-
-## 💻 Technologies Used
-- HTML
-- CSS
-- JavaScript
-- JSON Server (for saving data)
-
-## 🔧 Setup Instructions
-1. Clone this repository:
+## 📌 How to Run
+1. Clone this repo:  
    ```bash
-   git clone https://github.com/abdulhakim-sudi/debugme.git
+   git clone https://github.com/abdulhakim-sudigit add README.md
+/debugme.git
+   cd debugme

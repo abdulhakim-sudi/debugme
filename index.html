@@ -3,32 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debugme - Fun Code Grader</title>
+    <title>DebugMe - Fun Code Grader</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Debugme 🎉</h1>
-    <h3 id="scoreDisplay">Score: 0</h3>
-    
-    <h3>Challenge:</h3>
-    <p id="challengeText">Loading challenge...</p>
+    <h1>Welcome to DebugMe!</h1>
+    <p>Enter some code (e.g., <code>console.log("Hello World");</code>) and see if it meets the challenge!</p>
     
     <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
-    <button onclick="gradecode()">Grade My Code</button>
-    <button onclick="savecode()">Save My Code</button>
-    
-    <p id="result"></p>
-    
-    <input type="hidden" id="challengeAnswer"> <!-- Hidden correct answer -->
+    <button onclick="gradeCode()">Grade My Code</button>
 
-    <h3>Leaderboard 🏆</h3>
-    <table id="leaderboard">
-        <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Score</th>
-        </tr>
-    </table>
+    <p id="result"></p>
+
+    <div id="leaderboard">
+        <h2>Leaderboard</h2>
+    </div>
 
     <script src="script.js"></script>
 </body>

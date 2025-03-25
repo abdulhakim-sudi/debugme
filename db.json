@@ -1,0 +1,13 @@
+{
+    "users": [
+      { "id": 1, "name": "Abdulhakim", "score": 50, "lastChallenge": 1, "lastCode": "" },
+      { "id": 2, "name": "Alex", "score": 30, "lastChallenge": 2, "lastCode": "" },
+      { "id": 3, "name": "Mia", "score": 70, "lastChallenge": 3, "lastCode": "" }
+    ],
+    "challenges": [
+      { "id": 1, "question": "Fix this code: `let x =; console.log(x);`", "answer": "let x = 10; console.log(x);" },
+      { "id": 2, "question": "Why is this wrong? `consolelog('Debugging fun!');`", "answer": "console.log('Debugging fun!');" },
+      { "id": 3, "question": "Complete this function: `function add(a, b) { return ___; }`", "answer": "a + b;" }
+    ]
+  }
+  

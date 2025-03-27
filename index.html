@@ -7,25 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>welcome to DebugMe!</h1>
+    <h1>Welcome to DebugMe!</h1>
     <p>Enter some code (e.g., <code>console.log("Hello World");</code>) and see if it meets the challenge!</p>
     
     <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
     <button onclick="gradeCode()">Grade My Code</button>
-    <button onclick="toggleDarkMode()">Dark Mode</button>
-    <button onclick="clearLeaderboard()" class="clear-btn">Clear Leaderboard</button>
 
-    <script>
-    function toggleDarkMode() {
-        document.body.classList.toggle("dark-mode");
-    }
-    </script>
-    
     <p id="result"></p>
 
     <div id="leaderboard">
         <h2>Leaderboard</h2>
     </div>
+
+    <button onclick="clearLeaderboard()" id="clearBtn">Clear Leaderboard</button>
 
     <script src="script.js"></script>
 </body>

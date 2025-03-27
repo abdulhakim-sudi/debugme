@@ -8,7 +8,7 @@ function gradeCode() {
         result.innerText = "✅ Good job! You're using console.log() to debug!";
         saveToLeaderboard();
     } else {
-        result.innerText = "❌ Try using console.log() for debugging!";
+        result.innerText = "Try using console.log() for debugging!";
     }
 }
 

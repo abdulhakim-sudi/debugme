@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: #4a3e3e;
+    background-color: #e9068e;
 }
 
 h1 {
-    color: #333;
+    color: #620af0;
 }
 
 textarea {
@@ -20,8 +20,8 @@ textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
+    background-color: #0c1201;
+    color: rgb(239, 220, 220);
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -40,7 +40,7 @@ button:hover {
 
 #leaderboard {
     margin-top: 20px;
-    background: white;
+    background: rgb(72, 6, 228);
     padding: 15px;
     border-radius: 5px;
     width: 50%;
@@ -53,7 +53,7 @@ button:hover {
 }
 /* Dark Mode */
 .dark-mode {
-    background: #333;
+    background: #3806ec;
     color: white;
 }
 

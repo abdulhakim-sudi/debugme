@@ -68,3 +68,16 @@ function resetLeaderboard() {
     })
     .then(() => loadLeaderboard());
 }
+function clearLeaderboard() {
+    if (confirm("Are you sure you want to clear the leaderboard?")) {
+        fetch("http://localhost:3000/leaderboard", {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify([]),
+        })
+        .then(() => {
+            document.getElementById("leaderboard").innerHTML = "<h2>Leaderboard</h2>";
+            alert("Leaderboard cleared!");
+        });
+    }
+}

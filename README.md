@@ -10,7 +10,7 @@ DebugMe is an interactive coding challenge that helps beginners learn debugging 
 - Dark mode toggle.
 - Clear leaderboard button.
 
-How to Run
+## How to Run....
 1. Clone this repo:  
    ```bash
    git clone https://github.com/abdulhakim-sudi/debugme.git

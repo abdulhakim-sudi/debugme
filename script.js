@@ -5,7 +5,7 @@ function gradeCode() {
     let result = document.getElementById("result");
 
     if (code.includes("console.log")) {
-        result.innerText = "✅ Good job! You're using console.log() to debug!";
+        result.innerText = "Good job! You're using console.log() to debug!";
         saveToLeaderboard();
     } else {
         result.innerText = "Try using console.log() for debugging!";

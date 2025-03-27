@@ -3,7 +3,7 @@
 
 DebugMe is an interactive coding challenge that helps beginners learn debugging using **console.log()**.           
 
-## 🚀 Features
+## Features
 - Users enter code and get real-time feedback.
 - If correct, users can **add their name** to the leaderboard.
 - Leaderboard updates dynamically.

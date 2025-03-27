@@ -59,7 +59,7 @@ function loadLeaderboard() {
     });
 }
 
-// ✅ Reset Leaderboard
+// Reset Leaderboard
 function resetLeaderboard() {
     fetch("http://localhost:3000/leaderboard", {
         method: "PUT",

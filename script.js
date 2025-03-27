@@ -52,3 +52,13 @@ function clearLeaderboard() {
         .then(() => loadLeaderboard()); // Reload leaderboard after clearing
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const numBubbles = 20;
+    for (let i = 0; i < numBubbles; i++) {
+        let bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+        bubble.style.left = Math.random() * 100 + "vw";
+        bubble.style.animationDuration = (Math.random() * 3 + 3) + "s"; // Random speed
+        document.body.appendChild(bubble);
+    }
+});

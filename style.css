@@ -1,94 +1,116 @@
+/* 🌍 General Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: #f5f5f5;
+    background-color: #1e1e1e;
+    color: white;
 }
 
+/* 🎯 Headings */
 h1 {
-    color: #333;
+    color: #ffcc00;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.5);
 }
 
+/* 📜 Code Input Area */
 textarea {
     width: 80%;
-    height: 100px;
+    height: 120px;
     display: block;
     margin: 10px auto;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
 }
 
+/* 🎨 Buttons */
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #218838;
+    transform: scale(1.05);
 }
 
-#result {
-    font-size: 18px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
+/* 🏆 Leaderboard Styling */
 #leaderboard {
     margin-top: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 50%;
     margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 #leaderboard p {
     font-size: 18px;
+    color: #ffcc00;
 }
 
-/* Clear Button */
+/* ❌ Clear Button */
 #clearBtn {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #dc3545;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 #clearBtn:hover {
     background-color: #c82333;
-}
-body {
-    background-color: #000; /* Dark background */
-    overflow: hidden;
-    position: relative;
+    transform: scale(1.05);
 }
 
-.bubble {
+/* 🌀 Glowing Mouse Trail */
+.trail {
     position: absolute;
-    bottom: -50px;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
-    animation: floatUp 6s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: fadeOut 0.7s ease-out;
 }
 
-@keyframes floatUp {
-    from {
-        transform: translateY(100vh);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-10vh);
-        opacity: 0;
-    }
+/* ✨ Fading Effect */
+@keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(2); }
+}
+
+/* 🎨 Canvas for Connecting Lines */
+#mouseCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Ensures it doesn't block interactions */
+    z-index: 9999;
+}
+
+/* 🌌 Starry Background Canvas */
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: black;
 }
